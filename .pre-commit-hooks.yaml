@@ -1,0 +1,7 @@
+-   id: sql-lint
+    name: SQL Lint
+    description: Automatically lint and fix sql files using sqlfluff
+    language: python
+    entry: sql_lint_hook
+    always_run: true
+    types: [text]

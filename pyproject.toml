@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sql-lint"
+version = "0.0.1"
+description = "Pre-commit hook for automatically linting SQL files using sqlfluff"
+authors = ["Robert DeRienzo <rlderienzo@gmail.com>"]
+readme = "README.md"
+include = ["sql_lint/.sqlfluff"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlfluff = "^3.0.7"
+importlib_resources = "^6.4.0"
+
+[tool.poetry.scripts]
+sql_lint_hook = "sql_lint.hook:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
