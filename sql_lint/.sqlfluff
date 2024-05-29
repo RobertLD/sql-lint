@@ -14,8 +14,6 @@ indented_joins = false
 ; Caps rules
 [sqlfluff:rules:capitalisation.keywords]
 capitalisation_policy = lower
-[sqlfluff:rules:capitalisation.identifiers]
-extended_capitalisation_policy = lower
 [sqlfluff:rules:capitalisation.functions]
 extended_capitalisation_policy = lower
 [sqlfluff:rules:capitalisation.literals]
